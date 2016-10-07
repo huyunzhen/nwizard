@@ -1,0 +1,29 @@
+<script src="../js/ext/Update_Location.js"></script>
+<div class="update_location">
+<div class="ContentDiv">
+    <div class="PageDescripArea">
+        <h1 class="MainHeader">Updates Location</h1>
+        <p class="InstructionalText">You can ensure that you have the latest updates by checking the web site. You will be able to select which updates you want before they are downloaded. Once downloaded, updates will be stored in the local directory indicated below.</p>
+    </div>
+    <div class="ContentDivBody">
+        <div>
+            <input type="radio" checked name="updateLoc" id="updateLoc0" onclick="updateNavItems(0);">
+            <label for="updateLoc0" checked><span style="font-weight:bolder;">Check the web site</span> - Download the appropriate updates automatically from the site.</label>
+        </div>
+        <div style="margin-top:1em;">
+            <input type="radio" name="updateLoc" id="updateLoc1" onclick="updateNavItems(1);">
+            <label for="updateLoc1"><span style="font-weight:bolder;">Look in a local directory</span> - Specify a directory on the local file system containing specific individual updates. The directory should have been populated with the updates using a previous session of this tool, or manually.</label>
+        </div>
+        <div style="margin-left:25px;">
+            <input id="up_dir" type="text" class="StandardTextBox" style="width:80%;">
+            <input type="button" class=DialogButton value="Browse..." id="browsebtn" onclick="openWorkingDir('up_dir')">
+        </div>
+        <div style="overflow:no;margin-top:2em; width:97%;">
+            <div><img src="images/statusInformation_obj16.gif" style="float:left;"> All updates that are newer than the currently installed version will be installed. This default will only update already installed drivers and firmware, and will neither resolve unknown devices, nor update drivers that are not running.</div>
+            <div style="margin-top:1em;">
+                <input type="checkbox" onclick="addUndetected(this);" />Also select updates that are not installed or undetected</div>
+            <div style="margin-left: 25px;font-size:8pt;width:90%;">Select this option in order to attempt to detect all possible hardware in the system. This should be selected only if you have some unknown devices in Windows and that you want to resolve.</div>
+        </div>
+    </div>
+</div>
+</div>

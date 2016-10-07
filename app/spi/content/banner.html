@@ -1,0 +1,20 @@
+<div class = "banner">
+<div class="bannerDiv">
+	<table cellpadding="0" cellspacing="0">
+		<tr>
+			<td id="bannerTitle"> 
+				{{BANNER_TITLE}}
+			</td>
+			<td id="bannerInfo"> 
+				{{#SPI_BOOTABLE}}
+					{{Active_Machine_Type}}
+				{{/SPI_BOOTABLE}}
+				{{^SPI_BOOTABLE}}
+					{{Active_Machine_Type}}   {{OS_AND_ARCH}}
+				{{/SPI_BOOTABLE}}
+
+			</td>
+		</tr>
+	</table>
+</div>
+</div>

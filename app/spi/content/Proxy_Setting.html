@@ -1,0 +1,55 @@
+<script src="../js/ext/Proxy_Setting.js"></script>
+<div class="proxy_setting">
+<div class="ContentDiv">
+    <div class="PageDescripArea">
+        <h1 class="MainHeader">HTTP Proxy Setting</h1>
+        <p class="InstructionalText">If you require an HTTP Proxy to connect to the Internet, enter that information here. An Internet connection is needed in order to download the appropriate updates from the web site.
+        </p>
+    </div>
+    <div class="ContentDivBody">
+        <div id="pro"></div>
+        <div>
+            <input type="checkbox" NAME="setProxy" id="proxy" checked="checked" onclick="enableProxy()">
+            <label class="MenuText" for="proxy">I require a proxy server to connect to the Internet.</label>
+        </div>
+        <div id="proxyTable" class="LargInstructionalText" style="margin-left:25px;">
+            <p>
+                <label style="width:150px;">Host Name:</label>
+                <input type="text" style="width:150px;" id="pAdd" onchange="setProxy(this)">
+            </p>
+            <p>
+                <label style="width:150px;">Port:</label>
+                <input type="text" style="width:150px;" id="pPort" onchange="setProxy(this)">
+            </p>
+        </div>
+        <div id="CheckAuthenticate" style="InstructionalText;" style="margin-left:25px;">
+            <input type="checkBox" id="checkAccount" VALUE="Authenticate using the following credentials" onclick="showAccount(true)" unchecked>
+            <label for="checkAccount">Authenticate using the following credentials</label>
+            <BR>
+        </div>
+        <div id="ProxyAcountTable" class="LargInstructionalText;" style="margin-left:25px;">
+            <p>
+                <label style="width:150px;">User Name:</label>
+                <input type="text" style="width:150px;" id="pUid" onchange="setProxy(this)"> </p>
+            <p>
+                <label style="width:150px;">Password:</label>
+                <input type="password" style="width:150px;" id="pPwd" onchange="setProxy(this)">
+            </p>
+        </div>
+        <div id="ResultInfo">
+            <!--  style="display:none" -->
+            <button id="buttonTest" class="DialogButton" style="margin-top:25px;" onClick="TestConnection()">Test Connection</button>
+            <table width="90%" border="0" cellspacing="0" cellpadding="2">
+                <TR>
+                    <TD>
+                        <p class="statusImg" />
+                    </TD>
+                    <TD>
+                        <p class="LargInstructionalText" id="InfoText" />
+                    </TD>
+                </TR>
+            </table>
+        </div>
+    </div>
+</div>
+</div>

@@ -1,0 +1,44 @@
+<script src="../js/ext/LicenseAgreement.js"></script>
+<div class="license_modal">
+    <!-- License Modal -->
+    <div class="modal fade" id="licenseModal" role="dialog" data-keyboard="false" data-backdrop="static" >
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h4 class="modal-title">{{Software_License_Agreement}}</h4>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div>{{Please_Read_Carefully}}</div>
+                    <div>
+                        <select id='licenseLocaleContainer' onchange='LicenseAgreement.handleLocaleChanged();'></select>
+                    </div>
+                    <div>
+                        <textarea rows=12 cols=70 readOnly=true id='licenseContentTextArea'></textarea>
+                    </div>
+                    <div>
+                        <center><a onclick='window.open("licenses/notices.html");' href='#'>{{Read_NOTICES_AND_INFORMATION}}</a></center>
+                    </div>
+                    <!--
+                    <form action="javascript:void 0" name="languageSelectionForm" id="languageSelectionForm">
+                        <center>
+                            <select name="languageList" id="languageList">
+                                <option value="en" selected>English</option>
+                                <option value="cn">Chinese</option>
+                            </select>
+                            <input type="button" name="languageButton" id="languageButton" value="OK" onclick="languageSelectionAction(document.languageSelectionForm.languageList.value);">
+                        </center>
+                    </form>
+                    //-->
+                </div>
+                <div class="modal-footer">
+                    <a onclick='LicenseAgreement.accept();' href='#'>{{I_ACCEPT}}</a>
+                    </br>
+                    <a onclick='LicenseAgreement.reject();' href='#'>{{I_DONOT_ACCEPT}}</a>
+                    <!--
+                    <button type="button" class="btn btn-default" onclick='LicenseAgreement.accept();'>{{ACCEPT}}</button> //-->
+                </div>
+            </div>
+        </div>
+    </div>

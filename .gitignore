@@ -1,0 +1,12 @@
+node_modules
+build
+app/node_modules
+cache
+minified
+dist
+app/spi/js/libs/
+!app/spi/js/libs/*/dist/
+bin
+command/helpcli
+app/*.log
+app/port.txt

@@ -1,0 +1,22 @@
+<script src="../js/ext/Update_Type.js"></script>
+<div class="update_type">
+<div class="ContentDiv">
+    <div class="PageDescripArea">
+        <h1 class="MainHeader">Update Type</h1>
+        <p class="InstructionalText">Select the type of updates you wish to search for</p>
+    </div>
+    <div class="ContentDivBody">
+        <div style="font-weight:bolder;">
+            <input type="radio" selected name="updateType" id="updateType0" checked onclick="updateUpdateType(0);">
+            <label for="updateType0">System Packs (SP's)</label>
+        </div>
+        <div style="margin-left:35px;font-size:8pt;">System Packs contain an integration-tested bundle of online, updateable firmware and device driver updates for each System and server. This is the preferred method to obtain firmware and driver updates for the server.
+        </div>
+        <div style="margin-top:1em;font-weight:bolder;">
+            <input type="radio" name="updateType" id="updateType1" onclick="updateUpdateType(1);">
+            <label for="updateType1">Latest available individual updates</label>
+        </div>
+        <div style="margin-left:35px;font-size:8pt;">Use the latest individual version of each firmware and device driver package. This is the preferred method when you wish to install the latest updates, or when support instructs you to install the latest updates. This option may download newer updates and hotfixes, if available, than the SP option above.</div>
+    </div>
+</div>
+</div>

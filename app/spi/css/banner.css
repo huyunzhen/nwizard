@@ -1,0 +1,44 @@
+#bannerTitle {
+    text-align: left;
+    vertical-align: center;
+    padding: 5px 15px;
+    font-weight: bold;
+    font-size: 15pt;
+    color: #FFFFFF;
+}
+
+#bannerInfo {
+    text-align: right;
+    vertical-align: bottom;
+	padding: 5px 15px;
+    font-weight: bold;
+    font-size: 10pt;
+    color: #FFFFFF;
+}
+
+.bannerDiv {
+    background-color: #6998c8;
+    //font-family: Helvetica, Verdana, Arial, sans-serif;
+    padding: 0px; 
+    margin-bottom: 5px;
+	background-image:url(../images/banner_nf_ux.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	//height: 100%;
+    height: 48px;
+}
+
+/* Set bannerDiv table styles */
+
+.bannerDiv table {
+    width:100%;
+    height:100%;
+}
+
+
+/* Set the language option box in the center right */
+
+.bannerDiv tr {
+    vertical-align:middle;
+    text-align:right;
+}

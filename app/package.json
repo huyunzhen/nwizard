@@ -1,0 +1,18 @@
+{
+    "name": "nwizard",
+    "main": "spi/index.html",
+    "version": "0.0.1",
+    "single-instance": true,
+    "window": {
+        "title": "'NWizard",
+        "icon": "spi/images/nwizard_icon.png",
+        "width": 1000,
+        "height": 680,
+        "min_width": 600,
+        "min_height": 300,
+        "resizable": true,
+        "frame": true,
+        "toolbar": false
+    },
+    "chromium-args": "--child-clean-exit"
+}

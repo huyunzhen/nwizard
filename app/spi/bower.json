@@ -1,0 +1,27 @@
+{
+  "name": "nwizard",
+  "version": "0.0.1",
+  "authors": [
+    "ricemouse <peiming.hu@gmail.com>"
+  ],
+  "description": "nwizard dev",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "js/libs"
+  ],
+  "dependencies": {
+    "jquery": "2.1.4",
+    "jquery.steps": "~1.1.0",
+    "hogan.js": "hogan#~3.0.2",
+    "jquery-validation": "~1.14.0",
+    "bootstrap": "^3.3.7"
+  }
+}
